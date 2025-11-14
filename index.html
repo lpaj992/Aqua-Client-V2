@@ -17,6 +17,7 @@
 	<!-- Aqua Client Custom Loading UI -->
 	<!-- ----------------------------- -->
 	<style>
+		/* Fullscreen loading overlay */
 		#custom-loading {
 			position: absolute;
 			top: 0;
@@ -31,9 +32,15 @@
 			opacity: 1;
 			transition: opacity 1s;
 		}
+
+		/* Make the loading image cover the entire screen */
 		#loading-img {
-			width: 70%;
-			max-width: 700px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* fill screen without stretching */
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 	</style>
 	<!-- ----------------------------- -->
@@ -56,18 +63,18 @@
 						{ addr: "wss://xena.wtf/", name: "Xena" },
 						{ addr: "wss://mc.sealcentral.co", name: "SealCraft" },
 						{ addr: "wss://nexo-app.net", name: "Nexo" },
-						{ addr: "wss://ec.eb-bridging.pro", name: "Ec.Eb" }
+						{ addr: "wss://ec.eb-bridging.pro", name: "Ec.Eb"}
 					]
 				};
 
 				main();
 
-				// Keep loading screen for 10 seconds and then fade out
+				// Keep loading screen for 10 seconds, then fade out
 				setTimeout(() => {
 					const ld = document.getElementById("custom-loading");
 					if (ld) {
 						ld.style.opacity = "0"; // fade out
-						setTimeout(() => { ld.style.display = "none"; }, 1000); // remove after fade
+						setTimeout(() => { ld.style.display = "none"; }, 1000); // hide after fade
 					}
 				}, 10000); // 10 seconds
 			}
