@@ -1,21 +1,17 @@
-━━━━━━━━━━━━━━━━━ Copyright Eagler Devs ━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━ How to make your own client ━━━━━━━━━━━━━━━━━
 
-🚀 Welcome to Client Customization Instructions 🚀
+How to make your own client:
 
-Are you ready to personalize your CLIENT and take it to the next level? Follow these steps:
+1. Just copy this repo/download it as a ZIP under the green code button.
+2. Make a github respitory and add all the files that you downloaded.
+3. You are almost there.
+4. Once all the files are uploaded, go to settings.
+5. Now navigate to pages, click it, and make sure the respitory it public so it works.
+6. Make sure that the branch in the pages section is set to "Main", "/ (root)" and then click save.
+7. Give it a few minutes and then your client is ready.
+8. Finaly click on launch site and your good to go!
 
-📦 Edit the `package.json` File:
-- Open the `package.json` file for your CLIENT.
-- Customize the client according to your creative vision.
+Now go impress your friends at school because we know you all are kids who have nothing to do besides play eaglercraft. YAY!!!
 
-🎨 Add Your Client's Source Code:
-- Inject your creative genius into your client by crafting code in HTML, CSS, JS, and Python.
-- Your imagination is the only limit!
-
-🔄 Keep Your Client Updated:
-- Regularly sync your client with this repository to stay up-to-date with the latest enhancements and features.
-
-🎉 Have Fun!
-- Building and customizing your CLIENT should be an enjoyable journey. Explore, create, and have a blast!
-
-Happy coding! 🚀
+Special thanks to the Eagler Devs
+This would not have been possible without your starter client!
